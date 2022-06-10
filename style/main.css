@@ -1,0 +1,241 @@
+/*CSS file for personal website Teun Hanssen.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+
+:root {
+  --primary-color: #0E0E0E;
+  --secondary-color: #F0F0F0;
+  --blueish: #4989C4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--blueish);
+  height: fit-content;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Section header*/
+#header-section {
+  width: 100%;
+  font-size: 20px;
+  height: fit-content;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#header-name{
+  position: relative;
+  top: 16px;
+  left: 70px;
+  text-shadow: var(--blueish) 3px 4px;
+  width: fit-content;
+}
+
+#header-job {
+  position: relative;
+  top: -16px;
+  left: 1100px;
+  text-shadow: var(--blueish) 5px 3px;
+  width: fit-content;
+}
+/*Section main*/
+/*About*/
+#main-intro{
+  text-align: center;
+  margin: 40px;
+  color: var(--secondary-color);
+  font-size: larger;
+  height: auto;
+  width: auto;
+}
+
+#intro-btn {
+  background-color: var(--blueish);
+  color: var(--secondary-color);
+  border: var(--secondary-color) 2px solid;
+  padding: 7px;
+  margin: 22px; 
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: about-btn 8s infinite;
+}
+
+#intro-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--blueish);
+  border: var(--blueish) 2px solid;
+  transition: 0.50s;
+}
+
+
+/*Profile picture*/
+#profilePicture {
+  position: relative;
+  left: 450px;
+  top: -60px;
+}
+/*Projects */
+#main-projects {
+  position: relative;
+  width: fit-content;
+  left: 25%;
+  color: var(--primary-color);
+  display: grid;
+  top: -100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.project {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+}
+
+.project button {
+  font-size: 20px;
+  color: var(--blueish);
+  border: none;
+}
+
+
+#main-projects h3 {
+  text-decoration: underline;
+}
+/*About me*/
+#main-aboutMe{
+  position: relative;
+  left: 200px;
+  text-align: center;
+  font-size: larger;
+  background-color: var(--secondary-color);
+  top: -50px;
+  margin: 10px;
+  padding: 10px;
+  word-spacing: 2px;
+  color: var(--primary-color);
+  width: fit-content;
+}
+/*Skills*/
+#main-skillList {
+  position: relative;
+  width: fit-content;
+  left: 500px;
+  color: var(--primary-color);
+  display: grid;
+  top: 20px;
+  grid-template-columns: auto auto ;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.skill {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+}
+
+.htmlSkill{
+  background-color: orange;
+}
+
+.cssSkill{
+  background-color: lightblue;
+}
+
+.phpSkill {
+  background-color: rgb(140, 35, 140);
+}
+
+.resume {
+  position: relative;
+  left: 600px;
+  width: fit-content;
+}
+
+/*Footer section*/
+#footer-section {
+  position: relative ;
+  top: 100px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#footer {
+  text-align: center;
+  word-spacing: 20px;
+  font-size: 2rem;
+}
+
+.fa-brands {
+  color: var(--secondary-color);
+  width: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.fa-brands:hover {
+  transition: 0.2s;
+  color: var(--blueish);
+}
+
+/*!Responsive media*/
+
+@media screen and (max-width:414px) {
+  #header-section {
+    height: 80px;
+  }
+  #header-name {
+    position: relative;
+    left: 25%;
+    top: -0px;
+  }
+  #header-job{
+    position: relative;
+    left: 3%;
+    top: 10px;
+  }
+  #profilePicture {
+    position: relative;
+    left: -100px;
+  }
+  #main-projects {
+    grid-template-columns: auto;
+    left: 70px;
+  }
+  #main-aboutMe {
+    width: fit-content;
+    position: relative;
+    left: 0px;
+  }
+  #main-skillList {
+    left: 60px;
+    grid-template-columns: auto;
+  }
+}
+
+
+
